@@ -50,6 +50,12 @@
                     break;
                 case '/':
                 case ':':
+                    
+                    if (num2 == 0)
+                    {
+                        Console.WriteLine("Erro: Divisão por zero não é permitida.");
+                        return;
+                    }   
                     resultado = num1 / num2;
                     Console.WriteLine($"O resultado da divisão é: {resultado}");
                     break;
